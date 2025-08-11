@@ -70,11 +70,11 @@ const NoteItem = ({ note, onDelete, onToggleImportant, onToggleCompleted, onEdit
 
         <div className="note-actions">
           <button onClick={() => onToggleImportant(note.id)} className={`btn btn-sm ${note.important ? "btn-warning" : "btn-outline"}`} title={note.important ? "Hapus dari penting" : "Tandai sebagai penting"}>
-            {note.important ? "⭐" : "☆"}
+            ⭐
           </button>
 
           <button onClick={() => onToggleCompleted(note.id)} className={`btn btn-sm ${note.completed ? "btn-success" : "btn-outline"}`} title={note.completed ? "Tandai belum selesai" : "Tandai selesai"}>
-            {note.completed ? "✅" : "☐"}
+            ✅
           </button>
 
           <button onClick={() => setIsEditing(true)} className="btn btn-sm btn-outline" title="Edit catatan">
